@@ -1,6 +1,6 @@
 exports.handler = async (event) => {
   const campana = event.queryStringParameters.campana || 'sin_nombre'
-  const urlDestino = event.queryStringParameters.url || 'https://google.com'
+  const urlDestino = process.env.REDIRECT_URL || event.queryStringParameters.url || 'https://www.google.com'
   const ip = event.headers['x-forwarded-for'] || event.headers['client-ip'] || 'desconocido'
   const referer = event.headers['referer'] || ''
 

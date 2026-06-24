@@ -1,0 +1,9 @@
+{
+  "name": "netlify-click-tracker",
+  "version": "1.0.0",
+  "description": "Ethical hacking click tracker - phishing simulation",
+  "private": true,
+  "dependencies": {
+    "@supabase/supabase-js": "^2.43.0"
+  }
+}
